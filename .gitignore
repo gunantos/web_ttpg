@@ -2,7 +2,7 @@
 .htaccess
 application/cache/*
 !application/cache/index.html
-
+application/config/config.php
 application/logs/*
 !application/logs/index.html
 
