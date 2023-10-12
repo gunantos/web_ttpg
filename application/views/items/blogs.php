@@ -54,10 +54,10 @@
                      foreach($blog['baru'] as $key) {
                        echo '<a href="'. base_url('blog/'.$key->url) .'" class="list-group-item custom">
                               <div class="row">
-                                <div class="col-xs-4 no-padding">
+                                <div class="col-sm-4 no-padding">
                                   <img src="'. $this->config->item('admin_url').$key->images .'" class="img-responsive padding-right-10">
                                 </div>
-                                <div class="col-xs-8 no-padding pl-2">
+                                <div class="col-sm-8 no-padding pl-2">
                                   <div style="overflow: hidden;height: 57px;">
                                     <h6 class="no-margin"><span style="color: #000000;">'. $key->title .'</span></h6>
                                   </div>
@@ -72,10 +72,10 @@
                      foreach($blog['populer'] as $key) {
                        echo '<a href="'. base_url($key->url) .'" class="list-group-item custom">
                               <div class="row">
-                                <div class="col-xs-4 no-padding">
+                                <div class="col-sm-4 no-padding">
                                   <img src="'. $this->config->item('admin_url').$key->images .'" class="img-responsive padding-right-10">
                                 </div>
-                                <div class="col-xs-8 no-padding pl-2">
+                                <div class="col-sm-8 no-padding pl-2">
                                   <div style="overflow: hidden;height: 57px;">
                                     <h6 class="no-margin"><span style="color: #000000;">'. $key->title .'</span></h6>
                                   </div>
