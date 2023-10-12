@@ -29,9 +29,10 @@ class Blog extends CI_Controller {
         return show_404();
     }
     
-    private function info() {
-		$get = $this->db->limit(7)->order_by('created_at DESC')->get('website.blogs');
-		$get_populer = $this->db->limit(7)->order_by('view DESC')->get('website.blogs');
+    private function info() {        
+		$get = $this->db->limit(7)->order_by('created_at DESC')->where('deleted_at IS NULL')->get('website.blogs');
+		$get_populer = $this->db->limit(7)->order_by('view DESC')->where('deleted_at IS NULL')->get('website.blogs');
+        
 		$populer = [];
 		$baru = [];
 		if ($get) {
